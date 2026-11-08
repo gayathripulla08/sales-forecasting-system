@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment / secrets
+.env
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated data, models and reports (re-create with: python -m src.pipeline --regenerate)
+data/raw/*.csv
+data/processed/*.csv
+models/*.joblib
+reports/*.csv
+reports/*.json
+reports/*.png
+
+# Keep the empty folders in git
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!models/.gitkeep
+!reports/.gitkeep
